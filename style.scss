@@ -61,13 +61,17 @@ main{
 /* Button Styles
 ===================*/
 .btn{
-    background: linear-gradient(180deg, #57CC99 0%, #81EE99 100%);
+    background: #37A3A5;
     border-radius: 100px;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.btn_a{
+    color: #FFFFFF;
 }
 /* stars position
 ===================*/
@@ -173,6 +177,8 @@ main{
 .header__button{
     width: 135px;
     height: 54px;
+    padding: 13px;
+    text-align: center;
 }
 /* main content
 ===================*/
@@ -201,6 +207,7 @@ main{
     margin-top: 69px;
     width: 245px;
     height: 58px;
+    padding: 11px 59px;
 }
 .main__bg-img{
     position: absolute;
@@ -607,8 +614,7 @@ line-height: 24px;
     }
 }
 
-
-@media (max-width:1321px){
+@media (max-width:1348px){
     .container{
         max-width: 725px;
         padding: 0 5px;
@@ -616,11 +622,12 @@ line-height: 24px;
     .header{
         padding-top: 20px;
     }
-    .logo__link{
-        font-size: 20px;
+    .header__logo{
+        width: 62px;
+        height: 65px;
     }
-    .logo__text{
-        font-size: 13px;
+    .logo__link{
+        display: block;
     }
     .header__menu{
         margin-right: 5px;
@@ -634,8 +641,9 @@ line-height: 24px;
         height: 36px;
         font-size: 15px;
         line-height: 18px;
+        padding: 10px;
     }
-    .main{
+    .main_screen{
         height: 500px;
     }
     .main__content{
@@ -750,9 +758,6 @@ line-height: 24px;
     }
 
 }
-/* @media tablet (1024px) end
-===================*/
-
 @media (max-width: 768px){
     .container{
         max-width: 358px;
@@ -797,26 +802,17 @@ line-height: 24px;
     
 }
 
-@media (max-width:390px){
-    .logo__link{
-        font-size: 20px;
-        line-height: 24px;
-    }
-    .logo__link::after{
-        width: 76px;
-    }
-    .logo__text{
-        font-weight: 500;
-        font-size: 11px;
-        line-height: 13px;
-    }
+@media (max-width:912px){
     .header{
+        padding-right: 10px;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
     .header__logo{
+        width: 75px;
+        height: 75px;
         margin-left: 20px;
-        margin-right: 125px;
+        margin-right: 0;
     }
     .header__menu{
         display: none;
@@ -842,6 +838,7 @@ line-height: 24px;
     .main__content{
         position: relative;
         text-align: center;
+        align-items: center;
     }
     .main__title{
         font-size: 20px;
@@ -854,16 +851,83 @@ line-height: 24px;
     }
     .main__button{
         font-weight: 500;
+        width: 188px;
+        height: 42px;
         font-size: 16px;
         line-height: 20px;
+        margin-left: 168px;
+        padding: 10px;
+        margin-top: 83px;
+        background: #37A3A5;
+        border-radius: 100px;
+    }
+    .main__bg-img{
+        z-index: -1;
+        width: 307px;
+        height: 275.47px;
+        right: 0;
+        bottom: 0;
+        filter: blur(2px);
+    }
+}
+
+@media (max-width:768px){
+    
+    .header{
+        padding-right: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header__logo{
+        width: 75px;
+        height: 75px;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .header__menu{
+        display: none;
+    }
+    .header__button{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .dark__switch{
+        margin-right: 32px;
+    }
+    .dark__switch img{
+        width: 24px;
+        height: 24px;
+    }
+    .main{
+        height: 478px;
+        overflow: hidden;
+    }
+
+    .main__content{
+        position: relative;
+        text-align: center;
+        align-items: center;
+    }
+    .main__title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .main__subtitle{
+        font-size: 16px;
+        line-height: 150%;
+        margin-top: 10px;
+    }
+    .main__button{
+        font-weight: 500;
         width: 188px;
         height: 42px;
         font-size: 16px;
         line-height: 20px;
         margin-left: 168px;
         margin-top: 83px;
-        background: linear-gradient(180deg, #57CC99 0%, #81EE99 100%);
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        background: #37A3A5;
         border-radius: 100px;
     }
     .main__bg-img{
@@ -974,4 +1038,9 @@ line-height: 24px;
         height: 80px;
     }
     
+}
+@media (max-width:360px) {
+    .main__button{
+        margin-top: 30px;
+    }
 }
