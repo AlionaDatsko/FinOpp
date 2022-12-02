@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header_content">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        FinOpp
+                    </a>
+                    <div class="logo__text">Financial Opportunities</div>
+                </div>
+                <ul class="header__menu">
+                    <li class="menu__item"><a href="#functions">Функции</a></li>
+                    <li class="menu__item"><a href="#info">О нас</a></li>
+                    <li class="menu__item"><a href="#packages">Тарифы</a></li>
+                    <li class="menu__item"><a href="#reviews">Отзывы</a></li>
+                </ul>
+                <div href="#" class="dark__switch"><img src="img/dark.svg" alt=""></div>
+                <div href="#" class="BellRinging"><img src="img/BellRinging.svg" alt=""></div>
+                <input type="text" class="search" placeholder="Поиск">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="menu">
+            <div class="avatar"></div>
+            <div class="menu_content">
+                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card1.svg" alt="">
+                    <p>Доходы</p>
+                </a>
+                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card2.svg" alt="">
+                    <p>Копилка</p>
+                </a>
+                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card3.svg" alt="">
+                    <p>Расходы</p>
+                </a>
+                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card4.svg" alt="">
+                    <p>Аналитика</p>
+                </a>
+                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card5.svg" alt="">
+                    <p>Кредиты</p>
+                </a>
+                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card6.svg" alt="">
+                    <p>Долги</p>
+                </a>
+            </div>
+            <div class="menu_dop">
+                <a href="#"><img src="img/SignOut.svg" alt=""></a>
+                <a href="#"><img src="img/GearSix.svg" alt=""></a>
+            </div>
+        </section>
+        <section class="main_screen">
+            <section>
+                <h1 class="hello">Добро пожаловать</h1>
+                <div class="cards">
+                    <h2>Активные карты</h2>
+                    <div class="cards_content">
+                        <img src="img/pay_card.svg" alt="">
+                        <div>
+                            <input type="image" src="img/addcircle.svg" alt="Кнопка «input»">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="history">
+                    <form id="form-history" class="form_history">
+                        <h2>Недавние транзакции</h2>
+                        <input type="text" placeholder="Причина">
+                        <input type="number" placeholder="Сумма">
+                        <button class="history_plus">+</button>
+                        <button class="history_minus">-</button>
+                    </form>
+                    <div class="history_content" id="history_content"></div>
+                </div>
+            </section>
+            <section>
+                <div class="balance">
+                    <h2>Ваш баланс</h2>
+                    <h1>0 руб</h1>
+                </div>
+                <div class="awards">
+                    <h2>Мои достижения</h2>
+                    <div class="awards_content">
+                        <a href="#" class="win"><img src="img/Frame.svg" alt="">
+                            <p>Полученные награды</p>
+                        </a>
+                        <a href="#" class="no_win"><img src="img/Frame.svg" alt="">
+                            <p>Не полученные награды</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="diagram">
+                    <h2>Индикатор транжиры</h2>
+                    <div class="indicator indicator_first">
+                        <div class="access_indicator"></div> Доступно <p class="access_count">0</p>
+                    </div>
+                    <div class="indicator">
+                        <div class="expense_indicator"></div> Расход <p class="expense_count">0</p>
+                    </div>
+                    <svg width="153.82px" hright="148px" viewbox="0 0 42 42">
+                        <circle cx="21" cy="21" r="15.9154" fill="#FFFFFF80"></circle>
+                        <circle cx="21" cy="21" r="15.9154" fill="transparent" stroke="#FBB416" stroke-width="8">
+                        </circle>
+                        <circle cx="21" cy="21" r="15.9154" fill="transparent" stroke="#37A3A5" stroke-width="8"
+                            stroke-dasharray="0 100"></circle>
+                    </svg>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyC-FVxQkmszXABXUXqXkggM_SvLfKfnWRs",
+            authDomain: "finopp-8f929.firebaseapp.com",
+            projectId: "finopp-8f929",
+            storageBucket: "finopp-8f929.appspot.com",
+            messagingSenderId: "274354839441",
+            appId: "1:274354839441:web:01900afa8a96e7ff8dc430",
+            measurementId: "G-60PWJ2GDFT"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

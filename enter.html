@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="reg.css">
-    <title>Регистрация</title>
+    <title>Вход</title>
 </head>
 
 <body>
@@ -22,17 +22,9 @@
     </header>
     <main>
         <div class="container">
-            <form id="signup-form">
-                <h1>Регистрация</h1>
+            <form id="login-form">
+                <h1>Вход</h1>
                 <div class="inputs">
-                    <div class="filed">
-                        <p>Имя*</p>
-                        <input type="text" id="name">
-                    </div>
-                    <div class="filed">
-                        <p>Фамилия*</p>
-                        <input type="text" id="surname">
-                    </div>
                     <div class="filed">
                         <p>Почта*</p>
                         <input type="email" id="email">
@@ -43,7 +35,7 @@
                     </div>
                     <div><input type="checkbox">Запомнить меня</div>
                 </div>
-                <button class="btn" type="submit">Зарегистрироваться</button>
+                <button class="btn" type="submit">Вход</button>
             </form>
             <p class="dop_info">При регистрации вы подтверждаете согласие с условиями использования сайта и политикой
                 обработки данных
@@ -68,7 +60,7 @@
         const auth = firebase.auth();
         const db = firebase.firestore();
     </script>
-    <script src="js/reg.js"></script>
+    <script src="js/enter.js"></script>
 </body>
 
 </html>
