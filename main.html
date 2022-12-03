@@ -18,16 +18,16 @@
         <div class="container">
             <div class="header_content">
                 <div class="logo">
-                    <a href="#" class="logo__link">
+                    <a href="index.html" class="logo__link">
                         FinOpp
                     </a>
                     <div class="logo__text">Financial Opportunities</div>
                 </div>
                 <ul class="header__menu">
-                    <li class="menu__item"><a href="#functions">Функции</a></li>
-                    <li class="menu__item"><a href="#info">О нас</a></li>
-                    <li class="menu__item"><a href="#packages">Тарифы</a></li>
-                    <li class="menu__item"><a href="#reviews">Отзывы</a></li>
+                    <li class="menu__item"><a href="index.html#functions">Функции</a></li>
+                    <li class="menu__item"><a href="index.html#info">О нас</a></li>
+                    <li class="menu__item"><a href="index.html#packages">Тарифы</a></li>
+                    <li class="menu__item"><a href="index.html#reviews">Отзывы</a></li>
                 </ul>
                 <div href="#" class="dark__switch"><img src="img/dark.svg" alt=""></div>
                 <div href="#" class="BellRinging"><img src="img/BellRinging.svg" alt=""></div>
@@ -39,28 +39,28 @@
         <section class="menu">
             <div class="avatar"></div>
             <div class="menu_content">
-                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card1.svg" alt="">
+                <a href="404/404.html" class="menu_a"><img src="img/functions cards/icon-for-card1.svg" alt="">
                     <p>Доходы</p>
                 </a>
-                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card2.svg" alt="">
+                <a href="404/404.html" class="menu_a"><img src="img/functions cards/icon-for-card2.svg" alt="">
                     <p>Копилка</p>
                 </a>
-                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card3.svg" alt="">
+                <a href="404/404.html" class="menu_a"><img src="img/functions cards/icon-for-card3.svg" alt="">
                     <p>Расходы</p>
                 </a>
-                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card4.svg" alt="">
+                <a href="404/404.html" class="menu_a"><img src="img/functions cards/icon-for-card4.svg" alt="">
                     <p>Аналитика</p>
                 </a>
-                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card5.svg" alt="">
+                <a href="404/404.html" class="menu_a"><img src="img/functions cards/icon-for-card5.svg" alt="">
                     <p>Кредиты</p>
                 </a>
-                <a href="#" class="menu_a"><img src="img/functions cards/icon-for-card6.svg" alt="">
+                <a href="404/404.html" class="menu_a"><img src="img/functions cards/icon-for-card6.svg" alt="">
                     <p>Долги</p>
                 </a>
             </div>
             <div class="menu_dop">
-                <a href="#"><img src="img/SignOut.svg" alt=""></a>
-                <a href="#"><img src="img/GearSix.svg" alt=""></a>
+                <a href="#"><img src="img/SignOut.svg" alt="" class="Sign-out" onclick="logout()"></a>
+                <a href="404/404.html"><img src="img/GearSix.svg" alt=""></a>
             </div>
         </section>
         <section class="main_screen">
@@ -71,7 +71,7 @@
                     <div class="cards_content">
                         <img src="img/pay_card.svg" alt="">
                         <div>
-                            <input type="image" src="img/addcircle.svg" alt="Кнопка «input»">
+                            <input type="image" src="img/addcircle.svg" alt="Кнопка «input»" onclick="cardsButton()">
 
                         </div>
                     </div>
@@ -79,10 +79,10 @@
                 <div class="history">
                     <form id="form-history" class="form_history">
                         <h2>Недавние транзакции</h2>
-                        <input type="text" placeholder="Причина">
-                        <input type="number" placeholder="Сумма">
-                        <button class="history_plus">+</button>
-                        <button class="history_minus">-</button>
+                        <input type="text" placeholder="Причина" id="reason">
+                        <input type="number" placeholder="Сумма" id="amount">
+                        <button class="history_plus" onclick="historyPlus()">+</button>
+                        <button class="history_minus" onclick="historyMinus()">-</button>
                     </form>
                     <div class="history_content" id="history_content"></div>
                 </div>
@@ -95,10 +95,10 @@
                 <div class="awards">
                     <h2>Мои достижения</h2>
                     <div class="awards_content">
-                        <a href="#" class="win"><img src="img/Frame.svg" alt="">
+                        <a href="404/404.html" class="win"><img src="img/Frame.svg" alt="">
                             <p>Полученные награды</p>
                         </a>
-                        <a href="#" class="no_win"><img src="img/Frame.svg" alt="">
+                        <a href="404/404.html" class="no_win"><img src="img/Frame.svg" alt="">
                             <p>Не полученные награды</p>
                         </a>
                     </div>

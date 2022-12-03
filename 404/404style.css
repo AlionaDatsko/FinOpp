@@ -1,0 +1,420 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #132D46;
+  z-index: -1;
+  background: #E5F9E7;
+  position: relative;
+}
+
+a {
+  color: #132D46;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  font-family: inherit;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.header {
+  padding-top: 23px;
+  height: 113px;
+  background: #C8FACB;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
+.header__col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Montserrat";
+  font-style: normal;
+  margin-right: 50px;
+}
+
+.logo__title {
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.logo__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -25px;
+  width: 199px;
+  height: 2px;
+  background-color: #132D46;
+}
+
+.logo__subtitle {
+  margin-top: 9px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.search {
+  margin-right: 57px;
+  position: relative;
+}
+
+.search__icon {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 15px;
+  height: 18px;
+}
+
+.search__field {
+  padding-left: 28px;
+  background: #E5F9E7;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  width: 186px;
+  height: 28px;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  margin-right: 98px;
+}
+
+.menu__item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  background: linear-gradient(180deg, #57CC99 0%, #81EE99 100%);
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  text-align: center;
+  color: #E5F9E7;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.header__button {
+  width: 173px;
+  height: 43px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger__item {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 3px;
+  font-size: 0;
+  background-color: #202129;
+  border-radius: 15px;
+}
+
+.burger__item::after,
+.burger__item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #202129;
+  left: 0;
+  border-radius: 15px;
+}
+
+.burger__item::before {
+  top: -6px;
+}
+
+.burger__item::after {
+  bottom: -6px;
+}
+
+.main {
+  font-family: "Montserrat";
+  font-style: normal;
+  z-index: 5;
+}
+
+.container {
+  max-width: 560px;
+  margin-left: 86px;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 141.02%;
+  text-align: center;
+  color: #132D46;
+  margin-top: 85px;
+}
+
+.main__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 75px;
+  width: 385px;
+  height: 85px;
+  font-weight: 500;
+  font-size: 27.2383px;
+  line-height: 33px;
+}
+
+.txt2 {
+  display: none;
+}
+
+.pig1 {
+  background: url("img/pig1.svg");
+  width: 680.83px;
+  height: 680.83px;
+  position: absolute;
+  top: 342px;
+  right: 18px;
+  z-index: -1;
+}
+
+.pig2 {
+  background: url("img/pig2.svg");
+  width: 680.83px;
+  height: 680.83px;
+  position: absolute;
+  top: 74px;
+  right: 319px;
+  z-index: -1;
+}
+
+.pig3 {
+  background: url("img/pig3.svg");
+  width: 250.77px;
+  height: 250.77px;
+  position: absolute;
+  top: 148px;
+  right: 169px;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0 5px;
+  }
+  .header__col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .logo__title::after {
+    left: -33.5px;
+  }
+  .search {
+    margin-right: 0;
+  }
+  .header__wrapper {
+    justify-content: center;
+  }
+  .header__button {
+    width: 103px;
+  }
+  .header__menu {
+    margin-right: 18px;
+  }
+  .pig1 {
+    background: url("img/pig21.svg");
+    width: 248px;
+    height: 248px;
+    top: 435px;
+    left: 21.19%;
+  }
+  .pig2 {
+    background: url("img/pig22.svg");
+    width: 119px;
+    height: 119px;
+    top: 501px;
+    left: 46.67%;
+  }
+  .pig3 {
+    background: url("img/pig23.svg");
+    width: 236px;
+    height: 239px;
+    top: 399px;
+    right: 152px;
+    left: 58.39%;
+  }
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+  .main {
+    padding-top: 752px;
+    padding-bottom: 246px;
+  }
+  .main__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .main__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main__button {
+    width: 367px;
+    height: 65px;
+    margin-top: 48px;
+  }
+  .txt2 {
+    display: inline;
+  }
+  .txt1 {
+    display: none;
+  }
+}
+@media (max-width: 890px) {
+  .pig1 {
+    left: 14%;
+  }
+}
+@media (max-width: 730px) {
+  .header {
+    padding-top: 10px;
+    height: 61px;
+  }
+  .header__wrapper {
+    max-width: 370px;
+    justify-content: space-between;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
+  .header__col {
+    flex-direction: row;
+  }
+  .search__icon {
+    width: 19px;
+    height: 18px;
+  }
+  .search__field {
+    border: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .logo {
+    color: #000000;
+    margin-right: 17px;
+  }
+  .logo__title {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 0;
+  }
+  .logo__title::after {
+    width: 131px;
+    background: #000000;
+    height: 3px;
+    left: 0;
+  }
+  .logo__subtitle {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .pig1, .pig2, .pig3 {
+    display: none;
+  }
+  .main {
+    padding-top: 507px;
+  }
+  .main__title {
+    font-size: 20px;
+  }
+  .main__subtitle {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .main__button {
+    width: 210px;
+    height: 58px;
+    font-size: 21.5574px;
+    line-height: 26px;
+  }
+}/*# sourceMappingURL=404style.css.map */
