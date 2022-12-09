@@ -401,16 +401,6 @@ main {
   background: #FBB416;
 }
 
-.logo:hover {
-  color: #FBB416;
-}
-.logo:hover .logo__link {
-  color: #FBB416;
-}
-.logo:hover .logo__link::after {
-  background-color: #FBB416;
-}
-
 /* info END
 ===================*/
 footer {
