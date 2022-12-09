@@ -53,6 +53,10 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
+.pig2 {
+  display: none;
+}
+
 .header__wrapper {
   display: flex;
   flex-direction: row;
@@ -195,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
   font-style: normal;
   z-index: 5;
+  display: flex;
 }
 
 .container {
@@ -237,34 +242,9 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.pig1 {
-  background: url("img/pig1.svg");
-  width: 680.83px;
-  height: 680.83px;
-  position: absolute;
-  top: 342px;
-  right: 18px;
-  z-index: -1;
-}
-
-.pig2 {
-  background: url("img/pig2.svg");
-  width: 680.83px;
-  height: 680.83px;
-  position: absolute;
-  top: 74px;
-  right: 319px;
-  z-index: -1;
-}
-
-.pig3 {
-  background: url("img/pig3.svg");
-  width: 250.77px;
-  height: 250.77px;
-  position: absolute;
-  top: 148px;
-  right: 169px;
-  z-index: -1;
+.pig {
+  width: 900px;
+  height: 630px;
 }
 
 @media (max-width: 1024px) {
@@ -275,6 +255,9 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+  }
+  main {
+    flex-direction: column-reverse;
   }
   .logo {
     margin-right: 0;
@@ -294,35 +277,19 @@ h1, h2, h3, h4, h5, h6 {
   .header__menu {
     margin-right: 18px;
   }
-  .pig1 {
-    background: url("img/pig21.svg");
-    width: 248px;
-    height: 248px;
-    top: 435px;
-    left: 21.19%;
+  .pig {
+    display: none;
   }
   .pig2 {
-    background: url("img/pig22.svg");
-    width: 119px;
-    height: 119px;
-    top: 501px;
-    left: 46.67%;
-  }
-  .pig3 {
-    background: url("img/pig23.svg");
-    width: 236px;
-    height: 239px;
-    top: 399px;
-    right: 152px;
-    left: 58.39%;
+    display: block;
   }
   .container {
     max-width: 728px;
     margin: 0 auto;
   }
   .main {
-    padding-top: 752px;
-    padding-bottom: 246px;
+    padding-top: 140px;
+    padding-bottom: 146px;
   }
   .main__title {
     font-size: 32px;
@@ -402,7 +369,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .main {
-    padding-top: 507px;
+    padding-top: 107px;
   }
   .main__title {
     font-size: 20px;
