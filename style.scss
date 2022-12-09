@@ -103,30 +103,21 @@ main{
 .header{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     padding-top: 45px;
     justify-content: space-between;
 }
 
 .logo{
-    display: flex;
-    flex-direction: column;
-    font-weight: 700;
-    font-size: 26.0153px;
-    line-height: 32px;
+    width: 80px;
+    height: 80px;
     margin-right: 14px;
 }
 .logo__link{
     line-height: 32px;
     margin-bottom: 9px;
 }
-.logo__link::after{
-    content: '';
-    display: block;
-    width: 145px;
-    height: 4px;
-    background-color: #132D46;
-}
+
 .logo__text{
     font-size: 13.0076px;
     line-height: 16px;

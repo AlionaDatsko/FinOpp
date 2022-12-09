@@ -9,7 +9,7 @@ auth.onAuthStateChanged((user) => {
     console.log(user)
     if (user) {
         console.log("user is signed in at users.html");
-        let nameUs = user.email
+        let nameUs = user.name
         console.log(nameUs)
     } else {
         alert(

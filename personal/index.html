@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <img src="img/header/logo.svg" alt="" class="header__logo">
+            <ul class="header__menu">
+                <li class="header__menu-item">Главная</li>
+                <li class="header__menu-item">Мой бюджет</li>
+                <li class="header__menu-item">О нас</li>
+                <li class="header__menu-item">Тарифы</li>
+            </ul>
+            <img src="img/header/dark_switch.svg" alt="" class="dark__switch">
+            <img src="img/header/profile.svg" alt="" class="profile__img">
+            <div class="burger">
+                <span class="burger__item">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__wrapper">
+            <section class="main__profile">
+                <img src="img/main/Profile.svg" alt="" class="main__profile-img">
+                <h2 class="main__profile-name">
+                    Елена
+                </h2>
+            </section>
+            <section class="main__personal_info">
+                <div class="main__buttons">
+                    <button class="main__btn">
+                        <img src="img/main/main_btn1.svg" alt="" class="main__btn-img">
+                        <div class="main__btn-text">Уведомления</div>
+                    </button>
+                    <button class="main__btn">
+                        <img src="img/main/main_btn2.svg" alt="" class="main__btn-img">
+                        <div class="main__btn-text">Поддержка</div>
+                    </button>
+                    <button class="main__btn">
+                        <img src="img/main/main_btn3.svg" alt="" class="main__btn-img">
+                        <div class="main__btn-text">Достижения</div>
+                    </button>
+                </div>
+            </section>
+            <section class="main__profile_info">
+                <div class="main__profile_info_wrapper">
+                    <div class="main__profile-info-top">
+                        <h2 class="main__info_title">
+                            Основные
+                        </h2>
+                        <div class="main__profile-info-top-wrapper">
+                            <div class="form__group form__group-name">
+                                <label class="label name">Имя</label>
+                                <input value="Елена" class="input name-input">
+                            </div>
+                            <div class="form__group form__group-surname">
+                                <label class="label surname">Фамилия</label>
+                                <input class="input surname-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__profile-info-bot">
+                        <h2 class="main__info_title">
+                            Параметры доступа
+                        </h2>
+                        <div class="main__profile-info-bot-wrapper">
+                            <div class="form__group form__group-phone">
+                                <label class="label phone">Телефон</label>
+                                <div class="input__group">
+                                    <input value="+7 999 999 99 99" class="input phone-input">
+                                    <img src="img/main/x.svg" alt="" class="cross">
+                                </div>
+                            </div>
+                            <div class="form__group form__group-mail">
+                                <label class="label mail">E-mail</label>
+                                <div class="input__group">
+                                    <input value="larina@yandex.ru" class="input mail-input">
+                                    <img src="img/main/x.svg" alt="" class="cross">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group form__group-password">
+                            <label class="label password">Пароль</label>
+                            <div class="input__group">
+                                <input type="password" value="*******" class="input password-input">
+                                <img src="img/main/edit.svg" alt="" class="cross">
+                            </div>
+                        </div>
+                    </div>
+                    <center><button class="main__profile__info__btn">
+                        Сохранить
+                    </button></center>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <img src="img/footer/logo.svg" alt="" class="footer__logo">
+            <ul class="footer__menu">
+                <li class="footer__menu-item">Главная</li>
+                <li class="footer__menu-item">Мой бюджет</li>
+                <li class="footer__menu-item">О нас</li>
+                <li class="footer__menu-item">Тарифы</li>
+            </ul>
+            <div class="our__mail">
+                <div class="our__mail-text">
+                    Наша почта:
+                </div>
+                <a href="#" class="our__mail-link">
+                    finopp@mail.com
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

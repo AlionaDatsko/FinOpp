@@ -6,7 +6,7 @@ signupForm.addEventListener('submit', e => { //создаем для нее сл
     const name = signupForm['name'].value
     const surname = signupForm['surname'].value
 
-    auth.createUserWithEmailAndPassword(email, password).then((cred) => { // берем информацию с БД
+    auth.createUserWithEmailAndPassword(email, password, name, surname).then((cred) => { // берем информацию с БД
         return db.collection('users').doc(cred.user.uid).set({ // создаем коллекцию users и в ней запись
             email, password, name, surname
         }).then(() => { // когда всё прошло успешно переходим в документ login.html
